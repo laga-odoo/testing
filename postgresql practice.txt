@@ -1,0 +1,29 @@
+/*
+General Table Creation Structure
+
+CREATE TABLE table_name(
+	column_name TYPE column_constraint,
+	table_constraint table_constraint
+)
+*/
+
+CREATE TABLE datacamp_courses(
+	course_id SERIAL PRIMARY KEY.
+	course_name VARCHAR (50) UNIQUE NOT NULL,
+	course_instructor VARCHAR (100) NOT NULL,
+	topic VARCHAR (20) NOT NULL
+);
+
+# SERIAL: auto-increments column
+
+/*
+General Table Insertion Structure
+
+INSERT INTO table(col1, col2, ...)
+VALUES (val1, val2, ...)
+*/
+
+INSERT INTO datacamp_courses(course_name, course_instructor, topic)
+VALUES('Crypto 101', 'The Big J.O.T.', 'Going to the moon');
+
+INSERT INTO datacamp_courses
